@@ -18,7 +18,7 @@ class Provider(BaseProvider):
     Implements the Hetzner DNS Provider using the new RRSet-based API at https://api.hetzner.cloud.
     This implementation manages Resource Record Sets (RRSets), not legacy individual /records.
 
-    NOTE: It does not work for "konsoleH" or legacy "Domain Robot" offers (see hetzner_legacy provider).
+    NOTE: It does not work for "konsoleH" or legacy "Domain Robot" offers (see hetzner provider).
     """
 
     API_VERSION = "1.0"
