@@ -1,4 +1,4 @@
-"""Module provider for Hetzner (RRSet API)"""
+"""Module provider for Hetzner Console (RRSet API)"""
 
 import json
 import logging
@@ -29,7 +29,7 @@ class Provider(BaseProvider):
 
     @staticmethod
     def configure_parser(parser: ArgumentParser) -> None:
-        parser.add_argument("--auth-token", help="Specify Hetzner DNS API token")
+        parser.add_argument("--auth-token", help="Specify Hetzner Console API token")
 
     def __init__(self, config):
         super(Provider, self).__init__(config)
